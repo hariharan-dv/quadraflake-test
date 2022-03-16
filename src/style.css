@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+body{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    padding: 2rem;
+    margin: 3rem;
+    min-width: 300px;
+    min-height: 500px;
+    width: 25vw;
+    height: 25vh;
+    border: 2px solid rgb(43, 223, 255);
+    box-shadow: 15px 15px 4px 2px rgba(106, 255, 255, 0.863);
+}
+
+.wrapper{
+    margin:  1rem;
+    background-color: aqua;
+    border: 2px solid black;
+    padding: 1rem 0.8rem;
+    width: 320px;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    border: 1px solid rgb(45, 190, 210);
+    box-shadow: 5px 5px 1px rgb(80, 255, 255, 0.6);
+} 
+
+label{
+    padding: 0.2rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+select{
+    width: 200px;
+    padding: 0.2rem;
+    margin:  auto 0.5rem ;
+}
+select>option{
+    width: 200px;
+    padding: 0.3rem;
+    margin: 0.8rem; 
+}
+select[disabled]{
+    opacity: 1;
+    background-color: white;
+    border: 1px solid grey;
+    cursor: not-allowed;
+}
+.text-left{
+    text-align: left;
+    padding-right: 5px;
+}
+.output-wrap{
+    margin-top: 2rem;
+    padding: 1rem;
+    line-height: 1.5;
+    min-height: 100px;
+}
+.output{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem;
+}
+strong{
+    text-transform: capitalize;
+    margin-right: 1rem;
+}
+button {
+    border: none;
+    color: #090909;
+    padding: 0.5em 1.5em;
+    font-size: 15px;
+    border-radius: 0.3em;
+    background: #88e7ff;
+    border: 1px solid #50f3ff;
+    transition: all .3s;
+    box-shadow: 3px 3px 6px #a2f1ff,
+                -3px -3px 6px #45ffff;
+   }
+   
+   button:active {
+    color: rgb(27, 152, 255);
+    box-shadow: inset 4px 4px 12px #86e0f0,
+                inset -4px -4px 12px #6feeff;
+   }
+
+   .bottom{ 
+       position: relative;
+       bottom: 0;
+   }
